@@ -31,5 +31,5 @@ if __name__ == '__main__':
 from telegram.ext import Dispatcher
 
 def set_webhook():
-    webhook_url = "https://your_render_service_url/webhook"
+    webhook_url = "https://url-auto-delete-shortener-bot-o5y2.onrender.com/webhook"
     updater.bot.setWebhook(webhook_url)
