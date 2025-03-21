@@ -16,7 +16,7 @@ def help_command(update: Update, context: CallbackContext) -> None:
 
 # Основная функция для запуска бота
 def main():
-    updater = Updater("ВАШ_ТОКЕН", use_context=True)
+    updater = Updater("7953930520:AAHfK3RHiw5UNWxrBqkeqak1-9VuQ73O4tg", use_context=True)
     dispatcher = updater.dispatcher
 
     # Обработчики команд
@@ -28,3 +28,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+from telegram.ext import Dispatcher
+
+def set_webhook():
+    webhook_url = "https://your_render_service_url/webhook"
+    updater.bot.setWebhook(webhook_url)
